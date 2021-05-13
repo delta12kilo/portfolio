@@ -282,7 +282,7 @@ h1, h2, h3 {
     margin-right: 2em;
 }
 .flx:hover #show {
-    left: 15rem;
+    left: 17.5rem;
     color: green;
     margin-left: 0em;;
 
@@ -387,7 +387,7 @@ h1, h2, h3 {
         transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
     }
     .flx:hover > #show {
-        left: 20rem;
+        left: 23rem;
     }
 
     .icon-btn {
