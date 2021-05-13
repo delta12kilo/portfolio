@@ -248,16 +248,41 @@ h1, h2, h3 {
     position: absolute;
     left: 7.5em;
 }
-.flx > span {
-    margin-left: -10rem;
-    font-size: 6vh;
+.flx {
+    /* border: 2px solid red; */
+    height: 4em;
+    padding: 0em;
+    margin: -2em;
 }
-.flx > #hide {
-    opacity: 0;
+.flx > span {
+    margin-left: -9rem;
+    font-size: 6vh;
+    font-weight: 700;
+}
+.flx > #show {
+    position: absolute;
+    
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    
 }
 
-.flx:hover {
+.flx #hide {
+    position: relative;
+    float: left;
+    opacity: 0;
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.flx:hover #hide {
+    color: yellow;
+    left: 14rem;
+    opacity: 1;
+    margin-right: 2em;
+}
+.flx:hover #show {
+    left: 15rem;
     color: green;
+    margin-left: 0em;;
+
 }
 
 
@@ -354,6 +379,14 @@ h1, h2, h3 {
         font-size: 3vw;
         /* margin: 0;  */
     }
+    .flx > #show {
+        left: 25rem;
+        transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+    .flx:hover > #show {
+        left: 20rem;
+    }
+
     .icon-btn {
         
         left: 18em;
