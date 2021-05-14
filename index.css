@@ -457,6 +457,9 @@ h1, h2, h3 {
     }
     .card-1{
         flex: 0;
+        padding: 0em;
+        /* height: 100%; */
+        margin: -3em;
     }
     #greet {
         left: 0;
@@ -510,11 +513,16 @@ h1, h2, h3 {
         left: 0;
         margin-left: 3.7em;
     }
+    .social {
+        margin: 3em 0em 0em 0em;
+        /* background-color: red; */
+    }
     .icon-btn {
-        left: .7em;
-        bottom: -7em;
+        left: 2.8em;
+        /* bottom: -7em; */
     }
     #txt-tag {
+        color: #6649b8;
         margin: 0;
         padding: 0;
         width: max-content;
