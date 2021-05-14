@@ -266,7 +266,7 @@ h1, h2, h3 {
     position: absolute;
     
     transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
-    
+    right: 9rem;
 }
 
 .flx #hide {
@@ -383,11 +383,11 @@ h1, h2, h3 {
         /* margin: 0;  */
     }
     .flx > #show {
-        left: 25rem;
+        left: 18rem;
         transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
     }
     .flx:hover > #show {
-        left: 23rem;
+        left: 20rem;
     }
 
     .icon-btn {
