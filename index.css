@@ -369,6 +369,9 @@ h1, h2, h3 {
         /* padding: 14rem 0rem 0rem 21rem; */
         left: 10em;
     } 
+    hr {
+        display: none;
+    }
     #greet h1 {
         /* padding-right: 4em; */
         font-size: 4vw;
