@@ -230,7 +230,8 @@ h1, h2, h3 {
 }
 
 .sec-scr{
-    background-color: lightseagreen;
+    /* background-color: lightseagreen; */
+    background-image: linear-gradient( 109.6deg,  rgba(62,161,219,1) 11.2%, rgba(93,52,236,1) 100.2% );
     height: 100%;
     width: auto;
      
@@ -258,6 +259,7 @@ h1, h2, h3 {
     position: relative;
 }
 .flx > span {
+    color: blueviolet;
     margin-left: -9rem;
     font-size: 6vh;
     font-weight: 700;
@@ -324,6 +326,7 @@ h1, h2, h3 {
 }
 #txt-tag{
     /* border: 2px solid red; */
+    color: blueviolet;
     font-weight: 600;
     font-size: 6vh;
 }
@@ -340,9 +343,34 @@ h1, h2, h3 {
     content: 'Wannabe';
     
 } */
+.icon-btn > i {
+        /* margin: 1em; */
+    /* text-align: center; */
+    /* overflow: hidden; */
+    font-size: 7vh;
+    position: absolute;
+    left: 0rem;
+    /* display: contents; */
+    /* justify-content: center; */
+    top: 0rem;
+}
 
+
+#fb,#ig,#htb{
+    transition: all .5s ease-in;
+}
+
+#fb:hover{
+    color: rgb(15, 142, 228);
+}
+#ig:hover {
+    color: rgba(250, 141, 91, 0.959);
+}
+#htb:hover {
+    color: #9fef00;
+}
 .icon-btn {
-    background-color: white;
+    
 	border-radius: 3.6rem;
 	cursor: pointer;
 	display: inline-block;
@@ -357,11 +385,16 @@ h1, h2, h3 {
 	    -ms-user-select: none;
 	        user-select: none;
 	width: 3.6rem;
-    left: 11em;
+    left: 3em;
     /* bottom: em; */
 }
 
-
+.social{
+    width: 20em;
+    position: relative;
+    left: 13em;
+    bottom: 3.5em;
+}
 /* Responsive part */
 
 @media only screen and (min-width:1900px){
@@ -385,6 +418,10 @@ h1, h2, h3 {
         font-size: 3vw;
         /* margin: 0;  */
     }
+    .social{
+        left: -2em;
+        bottom: 1.5em;
+    }
     .flx > #show {
         left: 18rem;
         transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -396,6 +433,10 @@ h1, h2, h3 {
     .icon-btn {
         
         left: 18em;
+        margin: 0em .5em;
+    }
+    .icon-btn i {
+        font-size: 5vh;
     }
 
     @keyframes hvrefct {
@@ -462,7 +503,7 @@ h1, h2, h3 {
         flex: 0;
         padding: 0em;
         /* height: 100%; */
-        margin: -3em;
+        margin: -7em;
     }
     #greet {
         left: 0;
@@ -517,11 +558,11 @@ h1, h2, h3 {
         margin-left: 3.7em;
     }
     .social {
-        margin: 3em 0em 0em 0em;
+        margin: 7em 0em 0em -14em;
         /* background-color: red; */
     }
     .icon-btn {
-        left: 2.8em;
+        left: 5.8em;
         /* bottom: -7em; */
     }
     #txt-tag {
