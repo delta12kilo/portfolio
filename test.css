@@ -70,7 +70,7 @@
     transition: all 1s linear;
 }
 
-span {
+.txt > span {
     
     /* margin-bottom: -15rem; */
     font-size: 1.5rem;
