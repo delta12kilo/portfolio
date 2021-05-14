@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script defer src="theme.js"></script>
     <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./test.css">
     <script src="https://kit.fontawesome.com/c0017ea941.js" crossorigin="anonymous"></script>
     <link
         href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap"
@@ -13,7 +14,7 @@
     <title>Deepak Portfolio</title>
 </head>
 <body>
-    <div>
+  <div>
       <nav class="navbar">
         <ul class="navbar-nav">
             <li class="logo">
@@ -268,13 +269,13 @@
                   </div>
                 </div>
                 <div class="social">
-                  <a href="https://facebook.com" class="icon-btn" id="icon-soc1">
+                  <a href="https://facebook.com" target="_blank" class="icon-btn" id="icon-soc1">
                     <i class="fab fa-facebook" id="fb"></i>
                   </a>
-                  <a href="https://instagram.com" class="icon-btn" id="icon-soc2">
+                  <a href="https://instagram.com" target="_blank" class="icon-btn" id="icon-soc2">
                     <i class="fab fa-instagram" id="ig"></i>
                   </a>
-                  <a href="https://app.hackthebox.eu/profile/276931" class="icon-btn" id="icon-soc3">
+                  <a href="https://app.hackthebox.eu/profile/276931" target="_blank" class="icon-btn" id="icon-soc3">
                     <i class="fas fa-cube" id="htb"></i>
                   </a>
                 </div>
@@ -287,16 +288,84 @@
             </div>
           </div>
       </section>
-      <section id="whoim" class="sec-scr">
-            <div id="sec-head">
-              <h1>
-                Who am I?
-              </h1>
-            </div>
+      <section id="whoim" class="sec-scr">                     
+            <article class="card">
+              <header class="card-header">
+                <div class="work" id="wrk0">
+                  <img src="steve.jpg" alt="">
+                </div>
+                <div class="txt">
+                  <span>
+                    <h3>Emaily</h3>
+                    <p>This is small project1, which was build on React and node JS,
+                      which sends emails to multiple users at once.
+                    </p>
+                    <a href="#" class="git_logo"><i class="fab fa-github"></i></a>
+                  </span>
+                </div>
+              </header>
+            </article>
+            <article class="card">
+              <header class="card-header">
+                <div class="work" id="wrk1">
+                  <img src="wrk0.png" alt="">
+                </div>
+                <div class="txt">
+                  <span>
+                    <h3>Pictrest</h3>
+                    <p>This is small project,which is based on ReactJs, It fetches the data from api and show Imgaes.
+                    </p>
+                    <a href="#" class="git_logo"><i class="fab fa-github"></i></a>
+                  </span>
+                </div>
+
+              </header>
+            </article>
+            <article class="card">
+              <header class="card-header">
+                <div class="work" id="wrk2">
+                  <img src="steve.jpg" alt="">
+                </div>
+                <div class="txt">
+                  <span>
+                    <h3>Realtor</h3>
+                    <p>This project is based on RESTapi using Python and react.</p>
+                    <a href="#" class="git_logo"><i class="fab fa-github"></i></a>
+                  </span>
+                </div>
+
+              </header>
+            </article>
+            <article class="card">
+              <header class="card-header">
+                <div class="work" id="wrk3">
+                  <img src="steve.jpg" alt="">
+                </div>
+                <div class="txt">
+                  <span>
+                    <h3>Hand Gesture Detector</h3>
+                    <p>This project is based on Deep Learning, The program detects diffrent types of Hand gestures.</p>
+                    <a href="#" class="git_logo"><i class="fab fa-github"></i></a>
+                  </span>
+                </div>
+
+              </header>
+            </article>
+
+          <!-- </div>  -->
       </section>
-      
+      <!-- <section>
+        <div>
+          <h1>
+            My work
+          </h1>
+        </div>
+      </section>
+      <footer>
+        <h1>This is Footer</h1>
+      </footer> -->
 
     </main>
-    </div>
+  </div>
 </body>
 </html>
