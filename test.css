@@ -1,18 +1,30 @@
+#whoim{
+    /* background: transparent; */
+    background-color: #23232e;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
 .sec-scr {
-    background-image: linear-gradient( 109.6deg,  rgba(62,161,219,1) 11.2%, rgba(93,52,236,1) 100.2% );
-    /* width: 100vw; */
-    /* height: 100vh; */
+    /* background-image: linear-gradient( 109.6deg,  rgba(62,161,219,1) 11.2%, rgba(93,52,236,1) 100.2% ); */
+    width: 100%;
+    height: 100%;
+    background-color: #23232e;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    /* z-index: -; */
     /* flex: 1 1 200px; */
-    padding: 6rem;
-    margin: auto;
-    height: auto;
+    position: relative;
+    /* padding: 6rem; */
+    /* margin: auto; */
+    /* height: auto; */
 }
 
 .card {
-    display: flex;
+    /* display: flex; */
     position: relative;
     flex-direction: column;
     height: 350px;
@@ -82,4 +94,193 @@
 }
 .git_logo:hover {
     color: red;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* font-size: 2rem; */
+}
+
+.heading h1 {
+    margin: 4em;
+    font-weight: 900;
+    font-size: 3em;
+}
+
+.Tend {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 70%;
+    /* background-color: azure; */
+}
+.card0 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    /* border: 2px solid green; */
+    height: 50px;
+}
+
+.card01 {
+    justify-content: space-around;
+    /* position: initial; */
+    flex: 1;
+    background-color: #23232e;
+    /* border: 2px solid red; */
+    /* align-items: center; */
+    text-align: center;
+    margin: 20px;
+    transition: all .3s ease-in;
+} 
+.card01:hover {
+    box-shadow: 1rem 0 1rem rgb(70, 66, 66);
+    border-radius: 1em;
+}
+
+#frame1{
+
+    margin-left: 100px;
+
+}
+
+.mainhead{
+    /* border: 1px solid yellow; */
+    margin: 25px 80px;
+}
+
+.lang ul {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        margin: 0px 0px;
+}
+.lang li {
+    /* border: 1px solid pink; */
+    background-color: #17141d;
+    opacity: .5;
+    margin-right: 40px;
+    padding: 32px;
+}
+.lang li:hover {
+    transform: translateY(-1rem);
+    box-shadow: -1rem 0 2rem rgb(70, 66, 66);
+    border-radius: 1em;
+}
+.lang a {
+    opacity: 1;
+    font-size: 3rem;
+    float: left;
+    margin: 0px 3em;
+    transition: all .2s ease-in .3s;
+}
+.lang span {
+    float: right;
+    /* width: 10rem; */
+    height: 8px;
+    background-color: blue;
+    margin: -25px 15rem;
+    border-radius: 3px;
+}
+
+.lang a:hover{
+    color: coral;
+}
+
+#prog {
+    width: 10rem;
+
+}
+#prog1 {
+    width: 5rem;
+
+}
+#prog2 {
+    width: 6rem;
+
+}
+#pro3 {
+    width: 4rem;
+
+}
+.lang span > p {
+    color: green;
+}
+.mainhead > h1 {
+    font-weight: 800;
+    font-size: 3em;
+}
+
+.card01 > h1{
+    font-weight: 800;
+    font-size: 3em;
+}
+
+.form {
+    /* border: 3px solid green; */
+    margin: 4% 0% 16% 25%;
+    width: 50%;
+    height: 60%;
+}
+.form input {
+
+    width: 100%;
+    height: 15%;
+    line-height: 0rem;
+    margin: 15px;
+    padding: 0px;
+    background: transparent;
+    border-radius: 3rem;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 800;
+    border: none;
+    color: greenyellow;
+    font-size: 2em;
+    transition: all .2s ease-in;
+    /* color: greenyellow; */
+
+}
+
+input:hover {
+    box-shadow: -1rem 0 2rem rgb(70, 66, 66);
+}
+
+.form button{
+    background-image: linear-gradient( 109.6deg,  rgba(62,161,219,1) 11.2%, rgba(93,52,236,1) 100.2% );
+    width: 6rem;
+    height: 2.5rem;
+    margin: 1rem;
+    border: none;
+    transition: all .2s ease;
+}
+
+button:hover {
+    border-radius: 0px 0px 0px 0px green ;
+    background-image: linear-gradient( 110.3deg,  rgba(73,93,109,1) 4.3%, rgba(49,55,82,1) 96.7% );
+}
+
+.card0 {
+    color: goldenrod;
+    opacity: .2;
+    transition: all .1s ease;
+}
+.card0 i {
+    color: red;
+}
+.card0:hover{
+    opacity: 1;
+}
+@media only screen and (max-width:1900px) {
+    .card0 {
+        /* border: 2px solid red; */
+        margin: 6em;
+    }
+    .heading {
+        height: 20%;
+    }
 }
