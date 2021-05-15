@@ -7,23 +7,10 @@
     justify-content: center;
     /* flex: 1 1 200px; */
     padding: 6rem;
-    overflow-x: scroll;
     margin: auto;
     height: auto;
 }
-.sec-scr::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
-}
-.sec-scr::-webkit-scrollbar-thumb {
-    background: #201c29;
-    border-radius: 10px;
-    box-shadow: inset 2px 2px 2px hsla(0,0%,100%,.25), inset -2px -2px 2px rgba(0,0,0,.25);
-}
 
-.sec-scr::-webkit-scrollbar-track {
-    background: linear-gradient(90deg,#201c29,#201c29 1px,#17141d 0,#17141d);
-}
 .card {
     display: flex;
     position: relative;
@@ -95,10 +82,4 @@
 }
 .git_logo:hover {
     color: red;
-}
-
-@media (max-width: 768px){
-    .card {
-        display: block;
-    }
 }
