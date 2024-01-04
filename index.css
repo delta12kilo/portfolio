@@ -267,7 +267,6 @@ h1, h2, h3 {
 }
 .flx > #show {
     position: absolute;
-    
     transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
     right: 9rem;
 }
