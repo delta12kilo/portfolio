@@ -1,6 +1,5 @@
 :root {
     font-size: 16px;
-    font-family: Open Sans;
     
     --primary-text : #b6b6b6;
     --secondary-text : #ececec;
@@ -17,7 +16,7 @@ html {
 
 body {
     color: black;
-    background-color: black;
+    background-color: var(--bg-secondary);
     margin: 0;
     padding: 0;
     /* height: 100vh; */

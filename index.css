@@ -8,21 +8,20 @@
     --bg-primary: #23232e;
     --bg-secondary: #141418;
 
-    
-
     --trasnsition-speed: 600ms;
 }
+
 html { 
     scroll-behavior: smooth;
 }
+
 body {
     color: black;
     background-color: var(--bg-primary);
     margin: 0;
     padding: 0;
     /* height: 100vh; */
-    box-sizing: border-box;
-   
+    box-sizing: border-box;  
 }
 
 body::-webkit-scrollbar {
@@ -32,17 +31,21 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-track {
     background: #0808aa;
 }
+
 body::-webkit-scrollbar-thumb {
     background: #6649b8;
 }
+
 h1, h2, h3 {
     line-height: 1;
     /* margin: 0; */
 }
+
 .navbar{ 
     position: fixed;
     background-color: var(--bg-primary);
     transition: width 200ms ease;
+    width:16rem;
 }
 
 .navbar-nav {
@@ -483,15 +486,16 @@ h1, h2, h3 {
         transition: 1s ease;
         animation: undrCon 2s ease infinite ;
     }
-
-
 }
 @media only screen and (min-width:600px) {
     .navbar {
         top: 0rem;
         width: 5rem;
         height: 100vh;
-        /* background-color: violet; */
+    }
+    
+    .nav-arrow {
+        float: right;
     }
     
     .navbar:hover {
