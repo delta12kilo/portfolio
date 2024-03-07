@@ -1,16 +1,13 @@
 import Navbar from "./components/Navbar/Navbar"
 import './App.css';
+import Header from "./components/Header/Header";
 
 function App() {
 
   return (
     <>
-      <div className="under_cons">
-        <div id="warn">
-          <p>Mobile version is Under development.</p>
-        </div>
-      </div>
-      <Navbar />
+      {/* <Navbar /> */}
+      <Header />
     </>
   )
 }
