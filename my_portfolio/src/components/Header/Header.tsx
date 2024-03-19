@@ -4,11 +4,11 @@ import './Header.css';
 import darkMode from '../../assets/moon.svg';
 import lightMode from '../../assets/sun.svg';
 
-function Header() {
+export default function Header({ childToParent }: { childToParent: (data: boolean) => void }) {
 
     const [changeColor, setcolor] = useState('text-[#ec8846]');
-    const [theme, setTheme] = useState(darkMode);
-    const [themeText, setThemeText] = useState('text-white');
+    const [theme, setTheme] = useState(lightMode);
+    const [themeText, setThemeText] = useState('');
     const headerLi = [
         { id: 1, text: "Home" },
         { id: 2, text: "Projects" },
@@ -20,9 +20,11 @@ function Header() {
         if(theme === darkMode) {     
             setTheme(lightMode);
             setThemeText('text-black');
+            childToParent(true);
         } else {
             setTheme(darkMode);
             setThemeText('text-white');
+            childToParent(false);
         }
     };
 
@@ -73,4 +75,3 @@ function Header() {
     );
 }
 
-export default Header
