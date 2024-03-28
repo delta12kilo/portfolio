@@ -7,8 +7,8 @@
     --bg-primary: #23232e;
     --bg-secondary: #141418;
 
-    --bg-light: #f7f7fa;
-    --bg-dark: #141418;
+    --bg-light: #EEEEEE;
+    --bg-dark: #151515;
 
     --trasnsition-speed: 600ms;
 }
@@ -30,7 +30,8 @@ body.dark {
     background-color: var(--bg-dark);
     margin: 0;
     padding: 0;
-    box-sizing: border-box;  
+    box-sizing: border-box;
+    transition: ease-in-out;
 }
 
 body::-webkit-scrollbar {
