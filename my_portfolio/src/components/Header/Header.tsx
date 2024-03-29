@@ -3,6 +3,7 @@ import { useState } from "react";
 import './Header.css';
 import moon from '../../assets/moon.svg';
 import sun from '../../assets/sun.svg';
+import { Link, Outlet } from "react-router-dom";
 
 export default function Header({ childToParent }: { childToParent: (data: boolean) => void }) {
 
@@ -11,16 +12,11 @@ export default function Header({ childToParent }: { childToParent: (data: boolea
     const [themeText, setThemeText] = useState('');
     const [animateSunset, setAnimateSunset] = useState(false);
 
-    // const handleClick = () => {
-    //     setTheme(sun)
-    //     setAnimateSunset(!animateSunset); // Toggle animation state on click
-    // };
-
     const headerLi = [
-        { id: 1, text: "Home" },
-        { id: 2, text: "Projects" },
-        { id: 3, text: "About" },
-        { id: 4, text: "Contact" },
+        { id: 1, text: "Home", path: "/" },
+        { id: 2, text: "Projects", path: "/projects" },
+        { id: 3, text: "About", path: "/about"},
+        { id: 4, text: "Contact", path: "/contact"},
     ];
 
     const handleThemeClick = () => {
@@ -47,7 +43,7 @@ export default function Header({ childToParent }: { childToParent: (data: boolea
     return (
         <>
             <div 
-                className={`flex justify-between items-center h-40 max-w-[115vh] mx-auto`}
+                className={`flex justify-between items-center h-40 max-w-[115vh] mx-auto sticky top-0`}
             >
                 <motion.a 
                     onHoverStart={() => setcolor('text-[#de1d8d]')}
@@ -71,11 +67,12 @@ export default function Header({ childToParent }: { childToParent: (data: boolea
                                 }}
                                 key={li.id}
                             >
-                                {li.text}
+                                <Link to={li.path}>{li.text}</Link>
+                                {/* {li.text} */}
                             </motion.li>
                         ))
                     }
-                    <div 
+                    <li 
                         className="w-full p-1" 
                         onClick = {handleThemeClick}
                     >
@@ -89,8 +86,10 @@ export default function Header({ childToParent }: { childToParent: (data: boolea
                             src={theme}
                             onAnimationComplete={() => setAnimateSunset(false)}
                         />
-                    </div>
+                    </li>
                 </ul>
+
+                <Outlet />
             </div>
         </>
     );
