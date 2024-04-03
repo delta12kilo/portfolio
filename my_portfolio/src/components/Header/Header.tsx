@@ -11,6 +11,8 @@ export default function Header({ childToParent }: { childToParent: (data: boolea
     const [theme, setTheme] = useState(moon);
     const [themeText, setThemeText] = useState('');
     const [animateSunset, setAnimateSunset] = useState(false);
+    const angleOpen = "<";
+    const angleClose = ">";
 
     const headerLi = [
         { id: 1, text: "Home", path: "/" },
@@ -52,10 +54,13 @@ export default function Header({ childToParent }: { childToParent: (data: boolea
                         delay: 0.3,
                         ease: [0.5, 0.71, 1, 1.5],
                     }}
-                    className={`text-4xl font-bold ${changeColor} horizontal-underline horizontal-underline-active`}
+                    className={`text-4xl font-bold ${changeColor} horizontal-underline`}
                     onHoverEnd={() => setcolor('text-[#ec8846]')}
                 >
-                    D.
+                    <motion.span>{angleOpen}</motion.span>
+                    <span>D </span>
+                    <span>_</span>
+                    <motion.span>{angleClose}</motion.span>
                 </motion.a>
                 <ul className="flex">
                     {
@@ -68,7 +73,6 @@ export default function Header({ childToParent }: { childToParent: (data: boolea
                                 key={li.id}
                             >
                                 <Link to={li.path}>{li.text}</Link>
-                                {/* {li.text} */}
                             </motion.li>
                         ))
                     }
