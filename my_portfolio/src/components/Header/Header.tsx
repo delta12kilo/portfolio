@@ -42,6 +42,14 @@ export default function Header({ childToParent }: { childToParent: (data: boolea
         mass: 0.75,
     }
 
+    const blinkVariants = {
+        blink: {
+          opacity: [0, 1, 0],
+          scale: 2,
+          transition: { repeat: Infinity, duration: 1, ease: "easeInOut" }
+        }
+      };
+
     return (
         <>
             <div 
@@ -54,12 +62,16 @@ export default function Header({ childToParent }: { childToParent: (data: boolea
                         delay: 0.3,
                         ease: [0.5, 0.71, 1, 1.5],
                     }}
-                    className={`text-4xl font-bold ${changeColor} horizontal-underline`}
+                    className={`text-4xl font-bold ${changeColor}`}
                     onHoverEnd={() => setcolor('text-[#ec8846]')}
                 >
                     <motion.span>{angleOpen}</motion.span>
                     <span>D </span>
-                    <span>_</span>
+                    <motion.span
+                        className="font-bold"
+                        variants={blinkVariants}
+                        animate="blink"         
+                    >_</motion.span>
                     <motion.span>{angleClose}</motion.span>
                 </motion.a>
                 <ul className="flex">
